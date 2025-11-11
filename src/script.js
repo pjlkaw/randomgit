@@ -1,5 +1,8 @@
 document.getElementById("btnSearch").addEventListener("click", () => {
-  document.getElementById("alertP").style.display = "none";
+    const alertP = document.getElementById('alertP')
+    if (alertP) alertP.style.display = "none";
+
+
   const lang = document.querySelector("#selectLang").value;
   async function projetoAleatorio(lang) {
     const url = `https://api.github.com/search/repositories?q=language:${lang}&sort=stars&order=desc&per_page=100`;
