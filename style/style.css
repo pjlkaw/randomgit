@@ -57,6 +57,13 @@ header p {
     justify-content: center;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
 .container select {
     border-radius: 10px;
     padding: 5px;
@@ -69,8 +76,11 @@ header p {
 } 
 
 .container .result {
-    width: 300px;
-    height: 150px;
+    width: 100%;
+    min-width: 300px;
+    height: 100%;
+    min-height: 150px;
+    padding: 20px;
     background-color: var(--colorSecundaria);
     border-radius: 10px;
     padding: 10px;
@@ -80,6 +90,34 @@ header p {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+/* Descrição do projeto */
+.result #name {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.result #description {
+    font-size: 15px;
+    font-weight: bold;
+    max-width: 350px;
+    text-wrap: wrap;
+}
+
+.result #stars {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.result #link {
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: var(--colorTexto);
+} .result #link:hover {
+    color: var(--colorDestacado);
 }
 
 #btnSearch {
