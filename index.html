@@ -1,45 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RandomGit</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    
-    <link rel="stylesheet" href="style/style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
     <!-- Fazer primeiro o simples e depois integrar mais funcionalidades github API e 
      colocar um menu inicial para escolher qual função utilizar -->
 
     <header>
-        <i class="fa-brands fa-github icon"></i>
-        <h1>RandomGit</h1>
-        <p>Repositórios aleatórios</p>
+      <i class="fa-brands fa-github icon"></i>
+      <h1>RandomGit</h1>
+      <p>Repositórios aleatórios</p>
     </header>
     <main>
-        <section class="container">
-            <select id="selectLang" >
-                <!-- option vazia -->
-                <option value="" selected disabled hidden>Selecione uma linguagem</option>
-                <option value="js">JavaScript</option>
-                <option value="jv">Java</option>
-                <option value="py">Python</option>
-                <option value="cs">C#</option>
-                <option value="cpp">C++</option>
-                <option value="c">C</option>
-            </select>            
-            <div id="result" class="result">
-                <p>Por favor, selecione uma linguagem</p>
-            </div>
-            <button id="btnSearch">Buscar</button>
-        </section>
+      <section class="container">
+        <select id="selectLang">
+          <!-- option vazia -->
+          <option value="" selected disabled hidden>
+            Selecione uma linguagem
+          </option>
+          <option value="js">JavaScript</option>
+          <option value="jv">Java</option>
+          <option value="py">Python</option>
+          <option value="cs">C#</option>
+          <option value="cpp">C++</option>
+          <option value="c">C</option>
+        </select>
+        <div id="result" class="result">
+          <!-- <p>Por favor, selecione uma linguagem</p> -->
 
+          <!-- detalhes do projeto -->
+          <h3 id="name">Nome do projeto</h3>
+          <p id="description">Descrição do projeto</p>
+          <p id="stars">Número de estrelas</p>
+          <p id="forks">Número de forks</p>
+          <p id="url">URL do projeto</p>
+        </div>
+        <button id="btnSearch">Buscar</button>
+      </section>
     </main>
-    <footer>
-
-    </footer>
-
+    <footer></footer>
 
     <script src="src/script.js"></script>
-</body>
+  </body>
 </html>
