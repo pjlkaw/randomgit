@@ -31,9 +31,17 @@ header {
     gap: 2px;
 }
 
-header i {
+header .icon {
     font-size: 80px;    
     text-shadow: 0 0 5px var(--colorDestacado);
+}
+
+header .iconHouse {
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+} header .iconHouse:hover{
+    transform: scale(1.1);
 }
 
 header h1 {
@@ -132,4 +140,29 @@ main {
     background-color: var(--colorDestacado);
     color: var(--colorTexto);
     transform: scale(1.12);
+}
+
+footer {
+    margin-top: 10px;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+footer a {
+    color: white;
+    text-underline-offset: 3px;
+    margin-left: 3px;
+}
+
+footer p {
+    margin: 5px 10px;
 }
