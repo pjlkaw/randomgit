@@ -31,105 +31,92 @@ header {
     gap: 2px;
 }
 
+header h1 {
+    border-bottom: var(--colorDestacado) solid 2px;
+}
+
 header i {
     font-size: 80px;    
     text-shadow: 0 0 5px var(--colorDestacado);
 }
 
-header h1 {
-    font-size: 40px;
-    text-shadow: 0 0px 2px var(--colorDestacado);
-}
-
 header p {
-    position: relative;
-    bottom: 5px;
-    font-style: italic;
-    background-color: var(--colorSecundaria);
-    border-radius: 20px;
-    padding: 1px 10px;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
+    font-size: 10px;
+    text-transform: uppercase;
+    margin-top: 4px;
 }
 
 main {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    align-items: center;
+    gap: 20px;
 }
 
-.container select {
-    cursor: pointer;
-    border-radius: 10px;
-    padding: 5px;
-    text-align: center;
-}   
-.container select option {
-    background-color: var(--colorPrimaria);
-    color: var(--colorTexto);
-    text-align: center;
-} 
-
-.container .result {
-    width: 100%;
-    min-width: 300px;
-    height: 100%;
-    min-height: 150px;
-    padding: 20px;
-    background-color: var(--colorSecundaria);
-    border-radius: 10px;
-    padding: 10px;
+.container {
+    border-left: white solid 3px;
+    padding-left: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    align-items: center;
-    justify-content: center;
+}
+
+main h2 {
+    font-size: 15px;
+}
+
+main nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+}
+
+main nav .itemMenu {
+    text-align: center;
+    width: 250px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 1px var(--colorTexto);
+    background: linear-gradient(to left, var(--colorPrimaria), var(--colorSecundaria));
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+} main nav .itemMenu:hover{
+    background: linear-gradient(to rigth, var(--colorPrimaria), var(--colorSecundaria));
+    color: var(--colorDestacado);
+} .itemMenu a{
+    text-decoration: none;
+    color: var(--colorTexto);
+    transition: all 200ms ease-in-out;
+} .itemMenu a:hover{
+    color: var(--colorDestacado);
+}
+.soonText {
     text-align: center;
 }
 
-/* Descrição do projeto */
-.result #name {
-    font-size: 25px;
-    font-weight: bold;
+
+
+footer {
+    margin-top: 10px;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
 }
 
-.result #description {
-    font-size: 15px;
-    font-weight: bold;
-    max-width: 350px;
-    text-wrap: wrap;
+footer a {
+    color: white;
+    text-underline-offset: 3px;
+    margin-left: 3px;
 }
 
-.result #stars {
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.result #link {
-    font-size: 15px;
-    font-weight: bold;
-    text-decoration: underline;
-    text-underline-offset: 5px;
-    color: var(--colorTexto);
-} .result #link:hover {
-    color: var(--colorDestacado);
-}
-
-#btnSearch {
-    border-radius: 10px;
-    padding: 2px 10px;
-    cursor: pointer;
-    border: none;
-    transition: all 0.2s ease-in-out;
-} #btnSearch:hover {
-    background-color: var(--colorDestacado);
-    color: var(--colorTexto);
-    transform: scale(1.12);
+footer p {
+    margin: 5px 10px;
 }

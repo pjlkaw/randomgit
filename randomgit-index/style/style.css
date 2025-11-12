@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* cores github */
+:root {
+    --colorPrimaria: #17191d;
+    --colorSecundaria: #4c4e524b;
+    --colorTexto: #fdfdfd;
+    --colorDestacado: #079cff;
+}
+
+body {
+    background-color: var(--colorPrimaria);
+    color: var(--colorTexto);
+    display: flex;
+    gap: 10px;
+    align-items:center;
+    justify-content: center;
+    height: 100dvh;
+}
+
+header {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2px;
+}
+
+header i {
+    font-size: 80px;    
+    text-shadow: 0 0 5px var(--colorDestacado);
+}
+
+header h1 {
+    font-size: 40px;
+    text-shadow: 0 0px 2px var(--colorDestacado);
+}
+
+header p {
+    position: relative;
+    bottom: 5px;
+    font-style: italic;
+    background-color: var(--colorSecundaria);
+    border-radius: 20px;
+    padding: 1px 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.container select {
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}   
+.container select option {
+    background-color: var(--colorPrimaria);
+    color: var(--colorTexto);
+    text-align: center;
+} 
+
+.container .result {
+    width: 100%;
+    min-width: 300px;
+    height: 100%;
+    min-height: 150px;
+    padding: 20px;
+    background-color: var(--colorSecundaria);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Descrição do projeto */
+.result #name {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.result #description {
+    font-size: 15px;
+    font-weight: bold;
+    max-width: 350px;
+    text-wrap: wrap;
+}
+
+.result #stars {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.result #link {
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: var(--colorTexto);
+} .result #link:hover {
+    color: var(--colorDestacado);
+}
+
+#btnSearch {
+    border-radius: 10px;
+    padding: 2px 10px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s ease-in-out;
+} #btnSearch:hover {
+    background-color: var(--colorDestacado);
+    color: var(--colorTexto);
+    transform: scale(1.12);
+}

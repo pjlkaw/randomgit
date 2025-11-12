@@ -1,48 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RandomGit</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="style/style.css" />
-  </head>
-  <body>
-    <!-- Fazer primeiro o simples e depois integrar mais funcionalidades github API e 
-     colocar um menu inicial para escolher qual função utilizar -->
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SourceGit</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" ">
+</head>
+<body>
     <header>
-      <i class="fa-brands fa-github icon"></i>
-      <h1>RandomGit</h1>
-      <p>Repositórios aleatórios</p>
+        <i class=" fa-brands fa-github icon"></i>
+        <h1>SourceGit</h1>
+        <p>Menu</p>
     </header>
+
     <main>
-      <section class="container">
-        <select id="selectLang">
-          <!-- option vazia -->
-          <option value="" selected disabled hidden>
-            Selecione uma linguagem
-          </option>
-          <option value="javascript">JavaScript</option>
-          <option value="java">Java</option>
-          <option value="python">Python</option>
-          <option value="csharp">C#</option>
-          <option value="cpp">C++</option>
-          <option value="c">C</option>
-        </select>
-        <div id="result" class="result">
-          <p id="alertP">Por favor, selecione uma linguagem</p>
-        </div>
-      </section>
-      
-      <button id="btnSearch">Buscar</button>
+        <section class="container"> 
+            <h2>Escolha uma função do SourceGit</h2>
+            <nav>
+                <li class="itemMenu"><a href="randomgit-index/index.html">RandomGit</a></li>
+                <li class="soonText">Outros projetos em breve</li>
+            </nav>
+        </section>
     </main>
+
     <footer>
+        <p>Desenvolvido por:<a href="https://pjlkaw.github.io/Pedro_Bispo/" target="_blank">Pedro Bispo</a></p>
+        <p>2025</p>
+        <p>Todos os direitos reservados ©</p>
     </footer>
 
     <script src="src/script.js"></script>
-  </body>
+    </body>
+
 </html>
