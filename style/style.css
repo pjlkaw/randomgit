@@ -78,12 +78,12 @@ main nav .itemMenu {
     border-radius: 20px;
     box-shadow: 0px 0px 1px var(--colorTexto);
     background: linear-gradient(to left, var(--colorPrimaria), var(--colorSecundaria));
-    cursor: pointer;
     transition: all 200ms ease-in-out;
 } main nav .itemMenu:hover{
     background: linear-gradient(to rigth, var(--colorPrimaria), var(--colorSecundaria));
     color: var(--colorDestacado);
 } .itemMenu a{
+    cursor: pointer;
     text-decoration: none;
     color: var(--colorTexto);
     transition: all 200ms ease-in-out;
