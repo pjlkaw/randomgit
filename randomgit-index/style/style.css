@@ -112,7 +112,6 @@ main {
     font-size: 15px;
     font-weight: bold;
     max-width: 350px;
-    text-wrap: wrap;
 }
 
 .result #stars {
