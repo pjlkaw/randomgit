@@ -21,6 +21,7 @@ document.getElementById("btnSearch").addEventListener("click", () => {
         <p id="creator"> Feito por: ${projeto.owner.login}</p>
         <p id="stars">${projeto.stargazers_count} <i class="fa-solid fa-star"></i> </p>
         <a id="link" href="${projeto.html_url}" target="_blank">Ver projeto</a>
+        <i id="favorite" onclick="favorite()" class="fa-regular fa-heart favorite"></i>
       `;
     } catch (erro) {
       console.error(`Erro ao buscar projeto ${erro}`);
@@ -28,3 +29,4 @@ document.getElementById("btnSearch").addEventListener("click", () => {
   }
   projetoAleatorio(lang);
 });
+
